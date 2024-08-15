@@ -1,0 +1,201 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    background-color: #e9d9e0;
+    overflow-x: hidden;
+    width: 100vw;
+    font-weight: bold;
+  }
+  /* ---------NAVBAR SNS --------*/
+  #snsnav{
+    color: #df5898;
+    display:flex;
+    justify-content: flex-end;   
+    background-color:rgba(254,246,250,0.50);
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    padding:0;
+  }
+  #snslogos{
+    margin-right: 10px;
+    padding: 20px;
+  }
+  .fa-brands{
+    padding: 0 20px;
+  }
+  .fa-instagram:hover{
+    transform: scale(1.3);
+  }
+  .fa-tiktok:hover{
+    transform: scale(1.3);
+  }
+  /* ----------NAVBAR menu------------- */
+  nav{
+    background-color:#fef6fa;
+    width:100%;
+    color: #df5898;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    font-size: 120%;
+    position: sticky;
+    top:0;
+    z-index: 2;
+  }
+  #logo img{
+    width:80px;
+    height:80px;
+    padding:10px;
+  }
+  #logo{
+  align-items: center;
+  display:flex;
+  flex-direction: row;
+  }
+  nav a{
+    text-decoration: none;
+    padding:0 30px;
+    color: #df5898;
+  }
+  a:hover {
+    color:#ffc5e0;
+  }
+  #navdroite{
+    margin-right: 30px;
+  }
+  #links #active{
+    text-decoration: underline;
+  }
+/* ----------FORMULAIRE----------- */
+#contact-body{
+    display: flex;
+    justify-content: center;
+}
+#formulaire{
+    padding:40px;
+    width:35%;
+    height:30%;
+    margin:35px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fef6fa;
+    border-radius: 10px;
+    font-size: 25px;
+}
+#formulaire:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+  input[type="text"],
+  input[type="password"],
+  textarea,
+  #buttoncontact {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #buttoncontact{
+    width:100%;
+    background-color: #E05C9A;
+    border: 2px solid #ee7bb1;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 16px 24px;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    font-family: "Poppins";
+    font-weight: bold;
+    color:black;
+  }
+  #buttoncontact:hover {
+    color: #fff;
+    background-color: #b44679;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  #buttoncontact:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  /* ----------FOOTER--------------- */
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color:#fef6fa;
+    padding: 50px;
+    color: #df5898;
+    font-size: 150%;
+    text-align: center;
+}
+.left-footer{
+    line-height: 50px;
+    text-align: center;
+}
+.middle-footer a{
+    text-decoration: none;
+    padding:0 30px;
+    color: #df5898;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    text-align: center;
+}
+.middle-footer a:hover {
+    color:#ffc5e0;
+}
+
+#credits-footer{
+    background-color:rgba(254,246,250,0.50);
+    width:100%;
+    padding:0.5%;
+    text-align: center;
+}
+
+/* -------------RESPONSIVE MOBILE---------------- */
+
+@media (max-width: 600px) {
+/* --------NAVBAR------- */
+nav{
+  position: static;
+}
+/* ----------FORM---------- */
+#contactpage{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:25px;
+}
+#formulaire{
+    width:60%;
+    display:flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+#coordonnees{
+    width:45%;
+}
+/* ------------FOOTER---------- */
+footer{
+    flex-direction: column;
+    font-size: 120%;
+    line-height: 5px;
+    justify-content: center;
+    align-items:center;
+  }
+  .left-footer, .middle-footer{
+    border-bottom: 1px solid black;
+    padding:20px;
+  }
+  .right-footer h2{
+    padding:10px;
+  }
+  }
